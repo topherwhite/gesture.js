@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>gesture.js</title>
+<script src="gesture.js"></script>
+<style type="text/css">
+	body {
+		background-color:#bbbbbb;
+	}
+	div.trackpad {
+		width:650px;
+		height:400px; 
+		position:relative; 
+		margin-top:50px;
+		margin-left:auto; 
+		margin-right:auto;
+		overflow:visible; 
+		cursor:crosshair;
+		background-color:gray;
+		border:solid 3px black;
+	}
+	#console {
+		position:absolute;
+		text-align:center;
+		left:0%;
+		top:-40px;
+		width:650px;
+		color:black;
+		font-weight:bold;
+		font-size:130%;
+		font-family:arial;
+	}
+</style>	
+</head>
+<body>
+<div class="trackpad" onMouseDown="Gst.isMouseDown=true;">
+	<div id="console"></div>
+</div>
+</body>
+</html>
